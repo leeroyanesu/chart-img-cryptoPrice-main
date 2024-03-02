@@ -42,7 +42,7 @@ client.on('message', msg => {
         var INTERVAL = msg.body.split(" ")[2].toLowerCase()
         axios.get(`https://api.chart-img.com/v1/tradingview/advanced-chart/storage`, {
             headers: {
-                Authorization: `Bearer 4qNIkdM4j93nEJEco47ip4EnpsfcDkxU1nbe3y4j`
+                Authorization: `Bearer {BEARER_API_KEY}`
             },
             params: {
                 symbol: `BINANCE:${SYMBOL}`,
